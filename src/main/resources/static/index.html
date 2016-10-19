@@ -71,7 +71,7 @@
             <div class="wrap-avatar">
               <md-icon md-svg-icon="{{ contact.avatar }}" class="avatar"></md-icon>
             </div>
-            <span>{{ contact.firstName }} {{ contact.lastName }}</span>
+            <span>{{ contact.firstName }} {{ contact.lastName }} {{ contact.gender }}</span>
 
           </md-button>
         </md-item>
@@ -109,6 +109,14 @@
           <div ng-messages="contactForm.lastName.$error" ng-show="contactForm.lastName.$dirty">
             <div ng-message="required">This is required!</div>
           </div>
+        </md-input-container>
+
+        <md-input-container>
+          <label>Gender</label>
+          <input name="gender"
+                 ng-model="cc.copyContact.gender"
+                 required>
+
         </md-input-container>
 
         <md-input-container>
