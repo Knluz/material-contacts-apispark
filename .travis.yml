@@ -1,1 +1,6 @@
 language: java
+
+deploy:
+  provider: heroku
+  app: material-contacts-apispark-knl # optional if it's the same as your repo name
+  api_key: bd2ab560-f3ea-48f9-ab15-564f94d39fea
